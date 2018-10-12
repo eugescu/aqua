@@ -91,7 +91,7 @@ def run_circuits(circuits, backend, execute_config, qjob_config={},
 
         for idx in range(len(jobs)):
             job = jobs[idx]
-            job_id = job.id()
+            job_id = job.job_id()
             logger.info(
                 "Running {}-th chunk circuits, job id: {}".format(idx, job_id))
             while True:
